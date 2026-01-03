@@ -24,16 +24,13 @@ function openGoogle() {
   
   if (answer === true) {
     window.open('https://google.com')
-  } else {
-    return
-  }
-}
+  }}
 
-const outputConsoleLogButton = document.querySelector('#output-consol-log');
+const outputConsoleLogButton = document.querySelector('#output-log');
 
-outputConsoleLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №4'))
+outputConsoleLogButton.addEventListener('click', () => outputLog('ДЗ №4'))
 
-function outputConsoleLog(message) {
+function outputLog(message) {
   alert('10')
   console.log(message)
 }
@@ -44,8 +41,8 @@ outputConsoleTitle.addEventListener('mouseover', () => {
   console.log(outputConsoleTitle.textContent)
 })
 
-const changeColorRed = document.querySelector('#change-color-red');
+const toggleColor = document.querySelector('#change-color-red');
 
-changeColorRed.addEventListener('click', () => {
-  changeColorRed.classList.toggle('change-color-green')
+toggleColor.addEventListener('click', () => {
+  toggleColor.classList.toggle('change-color-green')
 })
