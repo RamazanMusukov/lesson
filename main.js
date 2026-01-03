@@ -22,7 +22,7 @@ openGoogleButton.addEventListener('click', openGoogle)
 function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google?');
   
-  if (answer === true) {
+  if (answer) {
     window.open('https://google.com')
   }}
 
