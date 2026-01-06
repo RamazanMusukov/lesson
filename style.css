@@ -102,3 +102,13 @@
     z-index: -1;
     background-size: 790px 697px;
 }
+
+.change-color-red {
+    background-color: red;
+    color: white;
+}
+
+.change-color-green {
+    background-color: green;
+    color: white;
+}
