@@ -1,11 +1,11 @@
 // 3.Создать функцию, которая принимает 2 параметра: 
 // город и температуру и выводит сообщение в консоль "Сейчас в X температура  — Y градусов по Цельсию"
 
-function weather(city, temperature) {
+function getWeatherInfo(city, temperature) {
   console.log(`Сейчас в ${city} температура ${temperature} градусов по Цельсию`);
 }
 
-weather('Самаре', '13')
+getWeatherInfo('Самаре', '13')
 
 
 // 4.Создать переменную, которая хранит внутри себя скорость света (гуглим). 
@@ -15,7 +15,7 @@ weather('Самаре', '13')
 
 const LIGHT_SPEED = 299792458;
 
-function checkingSpeed(speed) {
+function comparingSpeed(speed) {
   if (speed>LIGHT_SPEED) {
     console.log('Сверхсветовая скорость');
   } else if (speed<LIGHT_SPEED) {
@@ -25,7 +25,7 @@ function checkingSpeed(speed) {
   }
 }
 
-checkingSpeed(299792458)
+comparingSpeed(299792458)
 
 
 // 5.Создать переменную №1, которая содержит продукт и переменную №2, которая содержит его цену (на ваше усмотрение).
@@ -38,7 +38,7 @@ checkingSpeed(299792458)
 const product = 'Ананас';
 const productPrice = 516;
 
-function checkingTransaction(budget) {
+function purchaseProduct(budget) {
   if (budget>=productPrice) {
     console.log(`${product} приобретен. Спасибо за покупку!`);
   } else {
@@ -47,11 +47,11 @@ function checkingTransaction(budget) {
   }
 }
 
-checkingTransaction(138)
+purchaseProduct(138)
 
 // 6. Создать 1 функцию и именовать её по своему усмотрению
 
-function work() {
+function calc() {
   
 }
 
