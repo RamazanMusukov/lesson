@@ -26,23 +26,23 @@ function openGoogle() {
     window.open('https://google.com')
   }}
 
-const outputConsoleLogButton = document.querySelector('#output-log-btn');
+const consoleLogOutputButton = document.querySelector('#output-log-btn');
 
-outputConsoleLogButton.addEventListener('click', () => outputLog('ДЗ №4'))
+consoleLogOutputButton.addEventListener('click', () => outputLog('ДЗ №4'))
 
 function outputLog(message) {
   alert('10')
   console.log(message)
 }
 
-const outputConsoleTitle = document.querySelector('.product-title');
+const consoleTitleOutput = document.querySelector('.product-title');
 
-outputConsoleTitle.addEventListener('mouseover', () => {
-  console.log(outputConsoleTitle.textContent)
+consoleTitleOutput.addEventListener('mouseover', () => {
+  console.log(consoleTitleOutput.textContent)
 })
 
-const toggleColor = document.querySelector('#change-color-red-btn');
+const redColorChangeBtn = document.querySelector('#change-color-red-btn');
 
-toggleColor.addEventListener('click', () => {
-  toggleColor.classList.toggle('change-color-green')
+redColorChangeBtn.addEventListener('click', () => {
+  redColorChangeBtn.classList.toggle('change-color-green')
 })
