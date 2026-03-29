@@ -5,7 +5,7 @@ const userInfo = {
   job: "Frontend creator",
   city: "Нальчик",
   relationshipStatus: "Не женат",
-}
+};
 
 const carInfo = {
   brand: "Toyota",
@@ -13,7 +13,7 @@ const carInfo = {
   yearOfManufacture: "2019",
   color: "Black",
   transmission: "Automatic",
-}
+};
 
 carInfo.owner = userInfo 
 
@@ -22,20 +22,20 @@ carInfo.owner = userInfo
 // есть ли в объекте свойство "максимальная скорость", 
 // если нет - добавляет его и задает значение, если есть - прекращает выполнение (ничего не делает)
 
-function checkMaxSpeed (object) {
+function addMaxSpeed (object) {
   if (!object.maxSpeed) {
-    object.maxSpeed = 200
-    console.log(object.maxSpeed)
+    object.maxSpeed = 200;
+    console.log(object.maxSpeed);
   }
 }
 
-checkMaxSpeed(carInfo)
+checkMaxSpeed(carInfo);
 
 //  6.Написать функцию, которая получает первым аргументом  — объект, 
 //  а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение.
 
 function getObject (object, prop) {
-  console.log(object, prop)
+  console.log(object, prop);
 }
 
 getObject(userInfo, 'country')
@@ -57,7 +57,7 @@ const books = [
   yearOfPublication: 1854,
   coverColor: "синий",
   genre: "роман",
-  },
+  };
   
   {
   bookName: "Война и мир",
@@ -65,7 +65,7 @@ const books = [
   yearOfPublication: 1869,
   coverColor: "зеленый",
   genre: "роман",
-  },
+  };
   
   {
   bookName: "Алиса в Стране чудес",
@@ -73,7 +73,7 @@ const books = [
   yearOfPublication: 1865,
   coverColor: "черно-белый",
   genre: "Литературная сказка"
-  }
+  };
 ]
   books.push({
   bookName: "Горе от ума",
@@ -81,7 +81,7 @@ const books = [
   yearOfPublication: 1825,
   coverColor: "оранжевый",
   genre: "Комедия",
-  })
+  });
 
 
 // 9.Создать еще один массив, состоящих из тех же книг, 
@@ -97,7 +97,7 @@ const harryPotterBooks = [
   yearOfPublication: 1997,
   coverColor: "Красный",
   genre: "Фантастика",
- },
+ };
   
  {
   bookName: "Harry Potter and the Chamber of Secrets",
@@ -105,7 +105,7 @@ const harryPotterBooks = [
   yearOfPublication: 1998,
   coverColor: "Зеленый",
   genre: "Фантастика",
- },
+ };
  
  {
   bookName: "Harry Potter and the Prisoner of Azkaban",
@@ -113,10 +113,10 @@ const harryPotterBooks = [
   yearOfPublication: 1999,
   coverColor: "Фиолетовый",
   genre: "Фантастика",
- }
+ };
 ]
 
-const allBooks = [...books, ...harryPotterBooks]
+const allBooks = [...books, ...harryPotterBooks];
 
 console.log(allBooks);
 
@@ -129,7 +129,7 @@ console.log(allBooks);
 // Что я хочу этим сказать: если книга выпущена позже 2000 года, устанавливаем true (да, это редкий), 
 // нет - false (значит это не редкий).
 
-function addRareProperty(booksArray) {
+function getRareProperty(booksArray) {
   return booksArray.map(book => {
     return {
       ...book,
@@ -137,6 +137,6 @@ function addRareProperty(booksArray) {
     };
   });
 }
-const updatedBooks = addRareProperty(allBooks)
+const updatedBooks = getRareProperty(allBooks);
 
-console.log(updatedBooks)
+console.log(updatedBooks);
